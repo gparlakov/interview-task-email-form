@@ -8,50 +8,62 @@
     <div class="content-area">
       <!-- Email form template -->
       <form clrForm clrLayout="horizontal">
-        <!-- Custom SMTP Server toggle -->
-        <div class="clr-form-control">
-          <!-- <clr-toggle-wrapper> -->
-          <input type="checkbox" clrToggle name="custom-smtp" />
-          <label>Custom SMTP server</label>
-          <!-- </clr-toggle-wrapper> -->
-        </div>
+        <fieldset>
+          <legend>Custom server</legend>
+          <!-- Custom SMTP Server toggle -->
+          <div class="clr-form-control">
+            <!-- <clr-toggle-wrapper> -->
+            <input
+              type="checkbox"
+              clrToggle
+              name="custom-smtp"
+              id="custom-smtp"
+            />
+            <label for="custom-smtp">Custom SMTP server</label>
+            <!-- </clr-toggle-wrapper> -->
+          </div>
 
-        <!-- SMTP Server Name -->
-        <!-- <clr-input-container> -->
-        <label>SMTP Server name</label>
-        <input clrInput placeholder="SMTP Server name" name="server-name" />
-        <!-- </clr-input-container> -->
-
-        <div class="clr-form-control">
-          <!-- SMTP Server Port -->
+          <!-- SMTP Server Name -->
           <!-- <clr-input-container> -->
-          <label>SMTP server port</label>
-          <input clrInput placeholder="SMTP server port" name="server-port" />
+          <div>
+            <label>SMTP Server name</label>
+            <input clrInput placeholder="SMTP Server name" name="server-name" />
+          </div>
           <!-- </clr-input-container> -->
-        </div>
 
-        <!-- Requires authentication -->
-        <div class="clr-form-control">
-          <!-- <clr-toggle-wrapper> -->
-          <input type="checkbox" clrToggle name="authentication" />
-          <label>Required authentication</label>
-          <!-- </clr-toggle-wrapper> -->
-        </div>
+          <div class="clr-form-control">
+            <!-- SMTP Server Port -->
+            <!-- <clr-input-container> -->
+            <label>SMTP server port</label>
+            <input clrInput placeholder="SMTP server port" name="server-port" />
+            <!-- </clr-input-container> -->
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Auth</legend>
+          <!-- Requires authentication -->
+          <div class="clr-form-control">
+            <!-- <clr-toggle-wrapper> -->
+            <input type="checkbox" clrToggle name="authentication" />
+            <label>Required authentication</label>
+            <!-- </clr-toggle-wrapper> -->
+          </div>
 
-        <div>
-          <!-- Username -->
-          <!-- <clr-input-container> -->
-          <label>Username</label>
-          <input clrInput placeholder="Username" name="username" />
-          <!-- </clr-input-container> -->
-        </div>
-        <div>
-          <!-- Password -->
-          <!-- <clr-input-container> -->
-          <label>Password</label>
-          <input clrInput placeholder="Password" name="password" />
-          <!-- </clr-input-container> -->
-        </div>
+          <div>
+            <!-- Username -->
+            <!-- <clr-input-container> -->
+            <label>Username</label>
+            <input clrInput placeholder="Username" name="username" />
+            <!-- </clr-input-container> -->
+          </div>
+          <div>
+            <!-- Password -->
+            <!-- <clr-input-container> -->
+            <label>Password</label>
+            <input clrInput placeholder="Password" name="password" />
+            <!-- </clr-input-container> -->
+          </div>
+        </fieldset>
       </form>
       <button class="btn">Discard</button>
       <button class="btn btn-primary">Save</button>
